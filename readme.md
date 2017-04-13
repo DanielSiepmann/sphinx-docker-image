@@ -12,9 +12,7 @@ docker.
 
 ## Run
 
-Run `docker run --rm -v "$PWD":/sphinx danielsiepmann/sphinx html` from within the `Documentation` folder.
+Run `docker run --rm -v "$PWD":/sphinx danielsiepmann/sphinx make html` from within the `Documentation` folder.
 
-Where the last argument is the output format as provided by `Makefile`.
-
-The important part is to mount the `Documentation` folder into
-`/sphinx`. The `Documentation` folder has to contain the `Makefile`.
+The important part is to mount the `Documentation` folder into `/sphinx`. The
+`Documentation` folder has to contain the `Makefile`.
