@@ -11,4 +11,4 @@ RUN cd /usr/local/lib/python2.7/site-packages/pygments/lexers/ && \
 
 WORKDIR /sphinx
 
-ENTRYPOINT ["make"]
+CMD ["make", "html"]
